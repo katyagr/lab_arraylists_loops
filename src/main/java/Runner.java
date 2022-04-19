@@ -73,6 +73,17 @@ public class Runner {
 //          HINT - You will need to track the index throughout the loop
 //
 //          So [7, 13, 2] would have sum of 9.
+        int luckyTotal = 0;
+
+        for (int i = 0; i < numbers.size(); i++) {
+            if (numbers.get(i) == 13){
+                i++; //skip next number as index automatically increases when loop is done
+            } else {
+                luckyTotal += numbers.get(i);
+            }
+        }
+
+        System.out.println(luckyTotal);
 
     }
 
