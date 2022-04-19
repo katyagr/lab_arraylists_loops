@@ -53,8 +53,8 @@ public class Runner {
         System.out.println(numbers.stream().max(Integer::compare).get() - numbers.stream().min(Integer::compare).get());
 //        3. Print true if the list contains a 1 next to a 1 somewhere
         for (int i = 0; i < numbers.size(); i++){
-            if (i == 1){
-                if (i++ == 1){
+            if (numbers.get(i) == 1){
+                if (numbers.get(i++) == 1){
                     System.out.println(true);
                     break;
                 }
