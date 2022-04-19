@@ -56,10 +56,17 @@ public class Runner {
             if (i == 1){
                 if (i++ == 1){
                     System.out.println(true);
+                    break;
                 }
             }
         }
 //        4. Print the sum of the numbers
+        int total = 0;
+
+        for (int number : numbers){
+            total += number;
+        }
+        System.out.println(total);
 //        5. Print the sum of the numbers...
 //           ...except the number 13 is unlucky, so it does not count...
 //           ...and numbers that come immediately after a 13 also do not count
