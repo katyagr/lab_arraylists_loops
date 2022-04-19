@@ -50,6 +50,7 @@ public class Runner {
             }
         }
 //        2. Print the difference between the largest and smallest value
+        System.out.println(numbers.stream().max(Integer::compare).get() - numbers.stream().min(Integer::compare).get());
 //        3. Print true if the list contains a 1 next to a 1 somewhere
 //        4. Print the sum of the numbers
 //        5. Print the sum of the numbers...
